@@ -11,12 +11,14 @@ Dalam tugas besar ini, akan dibuat implementasi dari sistem yang ada pada permai
 * [Acknowledgements](#acknowledgements)
 
 ## Struktur File
+```bash
 📦Tucil1_13521008
  ┣ 📂bin
  ┣ 📂doc
  ┣ 📂src
  ┣ 📂test
  ┗ 📜README.md
+```
 
 ## Setup Program
 Langkah-langkah proses setup program adalah sebagai berikut:
