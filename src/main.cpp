@@ -76,6 +76,7 @@ void random(){
     random4 = rand() % 13 + 1;
     cout << "Angka-angka yang didapat adalah: ";
     cout << random1 << " " << random2 << " " << random3 << " " << random4 << endl;
+    cout << random1 + random2 + random3 + random4 << endl;
 }
 
 int main(){
