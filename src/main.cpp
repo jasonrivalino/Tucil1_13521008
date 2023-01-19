@@ -17,24 +17,6 @@ bool checkingCard(string card) {
     (card == "7") || (card == "8") || (card == "9") || (card == "10") || (card == "J") || (card == "Q") || (card == "K");
 }
 
-int stringToInt (string card) {
-    if (card == "A") {
-        return 1;
-    } 
-    if (card == "J") {
-        return 11;
-    }
-    if (card == "Q") {
-        return 12;
-    }
-    if (card == "K") {
-        return 13;
-    }
-    else {
-        return stoi(card);
-    }
-}
-
 void inputNumber() {
     cout << "Masukkan angka-angkanya: ";
     cin >> num1 >> num2 >> num3 >> num4;
@@ -42,11 +24,48 @@ void inputNumber() {
         cout << "Masukkan angka-angkanya: ";
         cin >> num1 >> num2 >> num3 >> num4;
     }
+    if (num1 == "A"){
+        num1 = "1";}
+    if (num2 == "A"){
+        num2 = "1";}
+    if (num3 == "A"){
+        num3 = "1";}
+    if (num4 == "A"){
+        num4 = "1";}
+    if (num1 == "J"){
+        num1 = "11";}
+    if (num2 == "J"){
+        num2 = "11";}
+    if (num3 == "J"){
+        num3 = "11";}
+    if (num4 == "J"){
+        num4 = "11";}
+    if (num1 == "Q"){
+        num1 = "12";}
+    if (num2 == "Q"){
+        num2 = "12";}
+    if (num3 == "Q"){
+        num3 = "12";}
+    if (num4 == "Q"){
+        num4 = "12";}
+    if (num1 == "K"){
+        num1 = "13";}
+    if (num2 == "K"){
+        num2 = "13";}
+    if (num3 == "K"){
+        num3 = "13";}
+    if (num4 == "K"){
+        num4 = "13";}
+
+    int num1Int = stoi(num1);
+    int num2Int = stoi(num2);
+    int num3Int = stoi(num3);
+    int num4Int = stoi(num4);
+
     cout << "Angka-angka yang didapat adalah: ";
-    cout << num1 << " " << num2 << " " << num3 << " " << num4 << endl;
+    cout << num1Int << " " << num2Int << " " << num3Int << " " << num4Int << endl;
+    cout << num1Int + num2Int + num3Int + num4Int << endl;
 }
-
-
 
 void random(){
     int random1, random2, random3, random4;
@@ -57,6 +76,7 @@ void random(){
     random4 = rand() % 13 + 1;
     cout << "Angka-angka yang didapat adalah: ";
     cout << random1 << " " << random2 << " " << random3 << " " << random4 << endl;
+    cout << random1 + random2 + random3 + random4 << endl;
 }
 
 int main(){
