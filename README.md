@@ -6,7 +6,7 @@ Jason Rivalino - 13521008
 ## Permainan Kartu 24
 Permainan Kartu 24 adalah permainan karu aritmatika dengan tujuan untuk mencari cara agar 4 buah angka random dapat membentuk hasil akhir yang memiliki nilai 24. Permainan kartu 24 biasa dimainkan dengan kartu remi yang terdiri dari 52 kartu yang terdiri atas 4 suit dan pada tiap suit terdiri atas 13 kartu dengan angka-angka yang berbeda mulai dari As yang bernilai 1, 2-10, lalu J yang bernilai 11, Q yang bernilai 12, dan K yang bernilai 13. Permainan dilakukan dengan mengambil 4 kartu dari deck. Pemain harus menemukan solusi untuk membuat kumpulan nilai dari kartu yang diambil tersebut bernilai 24 menggunakan operasi dasar matematika yaitu penjumlahan, pengurangan, perkalian, dan pembagian.
 
-Dalam tugas besar ini, akan dibuat implementasi dari sistem yang ada pada permainan kartu 24 dengan menggunakan bahasa pemrograman Java.
+Dalam tugas besar ini, akan dibuat implementasi dari sistem yang ada pada permainan kartu 24 dengan menggunakan bahasa pemrograman C++.
 
 ## Table of Contents
 * [Struktur File](#struktur-file)
