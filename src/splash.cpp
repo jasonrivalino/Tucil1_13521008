@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// Splash Screen Opening
 void splashScreenOpening(){
   cout << endl;
   cout << "---------------------------------------------------------------------" << endl;
@@ -28,13 +29,18 @@ void splashScreenOpening(){
   cout << endl;
 }
 
+// Splash Screen Closing
 void splashScreenClosing(){
+    cout << endl;
+    cout << "********************************************************************" << endl;
     cout << "  _______        _                    _  __         _ _        _ _  " << endl;
     cout << " |__   __|      (_)                  | |/ /        (_) |      | | | " << endl;
     cout << "    | | ___ _ __ _ _ __ ____  __ _   | ' / __ _ ___ _| |__    | | | " << endl;
     cout << "    | |/ _ | '__| | '_ ` _  | / _`|  |  < / _` / __| | '_ |   | | | " << endl;
     cout << "    | |  __/ |  | | | | | | | (_| |  | . | (_| |__ | | | | |  |_|_| " << endl;
     cout << "    |_||___|_|  |_|_| |_| |_||__,_|  |_||_|__,_|___/_|_| |_|  (_|_) " << endl;
+    cout << "                                                                    " << endl;
+    cout << "********************************************************************" << endl;
     cout << endl;
     cout << ("---------------------------------------------") << endl;
     cout << ("Terima kasih telah menggunakan program ini !!") << endl;

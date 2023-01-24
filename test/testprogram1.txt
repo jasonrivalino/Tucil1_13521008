@@ -1,0 +1,9 @@
+Angka-angka yang akan dicari hasilnya adalah: 7 11 5 13
+
+Solusi yang didapat adalah: 
+(7 + 5) * (13 - 11)
+(5 + 7) * (13 - 11)
+(13 - 11) * (5 + 7)
+(13 - 11) * (7 + 5)
+
+4 Solutions Found

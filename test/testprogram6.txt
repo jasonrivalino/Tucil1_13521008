@@ -1,0 +1,7 @@
+Angka-angka yang akan dicari hasilnya adalah: 11 12 2 4
+
+Solusi yang didapat adalah: 
+((11 - 2) * 4) - 12
+(4 * (11 - 2)) - 12
+
+2 Solutions Found

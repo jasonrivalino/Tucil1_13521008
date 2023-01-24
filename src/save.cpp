@@ -8,6 +8,7 @@
 using namespace std;
 
 
+// Fungsi untuk menyimpan hasil operasi ke dalam file
 void saveFile(){
     string namaFile;
     cout << "Masukkan nama file: ";
@@ -22,12 +23,12 @@ void saveFile(){
     }
     myfile << endl;
     if (counts == 0){
-        myfile << "No solutions found" << endl;
+        myfile << "No Solutions Found" << endl;
     }
     else if (counts == 1){
-        myfile << "1 solution found" << endl;
+        myfile << "1 Solution Found" << endl;
     }
     else{
-        myfile << counts << " solutions found" << endl;
+        myfile << counts << " Solutions Found" << endl;
     }
 }

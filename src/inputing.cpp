@@ -10,7 +10,7 @@ string num1, num2, num3, num4;
 int num1Int, num2Int, num3Int, num4Int;
 int cards[4];
 
-// Fungsi untuk mengecek apakah inputan valid
+// Fungsi untuk mengecek apakah inputan valid atau tidak
 bool checkingCard(string card) {
     return (card == "A") || (card == "2") || (card == "3") || (card == "4") || (card == "5") || (card == "6") || 
     (card == "7") || (card == "8") || (card == "9") || (card == "10") || (card == "J") || (card == "Q") || (card == "K");
@@ -18,11 +18,11 @@ bool checkingCard(string card) {
 
 // Fungsi opsi pertama untuk menginput angka secara manual
 void inputNumber() {
-    cout << "--------------------------------------------" << endl;
-    cout << "Masukkan kartu yang ingin dicari nilai 24nya" << endl;
+    cout << "-----------------------------------------------------" << endl;
+    cout << "Masukkan angka-angka kartu yang ingin dicari nilainya" << endl;
     cout << "Format input: angka1 angka2 angka3 angka4" << endl;
     cout << "Contoh: A 2 3 4" << endl;
-    cout << "--------------------------------------------" << endl;
+    cout << "-----------------------------------------------------" << endl;
     cout << endl;
     cout << "Input kartu: ";
     cin >> num1 >> num2 >> num3 >> num4;
@@ -74,8 +74,7 @@ void inputNumber() {
     cards[1] = num2Int;
     cards[2] = num3Int;
     cards[3] = num4Int;
-    // cout << cards[0]+cards[1]+cards[2]+cards[3] << endl;
-    // cout << num1Int + num2Int + num3Int + num4Int << endl;
+    // cout << cards[0]+cards[1]+cards[2]+cards[3] << endl; (Bwat ngecek bentuk udah integer apa belom)
 }
 
 // Fungsi opsi kedua untuk menginput angka secara random
@@ -91,6 +90,5 @@ void random(){
     cards[1] = num2Int;
     cards[2] = num3Int;
     cards[3] = num4Int;
-    // cout << cards[0]+cards[1]+cards[2]+cards[3] << endl;
-    // cout << num1Int + num2Int + num3Int + num4Int << endl;
+    // cout << cards[0]+cards[1]+cards[2]+cards[3] << endl; (Bwat ngecek bentuk udah integer apa belom)
 }
