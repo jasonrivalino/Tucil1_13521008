@@ -1,6 +1,6 @@
 # Tugas Kecil 1 Mata Kuliah Strategi Algoritma IF2211
 
-## Nama Pembuat Program
+## Author
 Jason Rivalino - 13521008
 
 ## Permainan Kartu 24
