@@ -18,7 +18,7 @@ void splashScreenOpening(){
   cout << "                ||                                 ||" << endl;
   cout << "                ||     PROGRAM INI DIBUAT OLEH     ||" << endl;
   cout << "                ||         JASON RIVALINO          ||" << endl;
-  cout << "                ||     13521008 - KO3 JATINANGOR   ||" << endl;
+  cout << "                ||    13521008 -- KO3 JATINANGOR   ||" << endl;
   cout << "                ||                                 ||" << endl;
   cout << "                =====================================" << endl;
   cout << endl;

@@ -1,39 +1,40 @@
 #include <iostream>
 #include <cstdlib>
 #include <string>
-#include <vector>
-#include <fstream>
-#include <sstream>
 using namespace std;
 
 // Fungsi untuk kalkulasi operasi
 double calculation (double num1Int, double num2Int, int operators){
+    double hasil;
     if (operators == 1){
-        return num1Int + num2Int;
+        hasil = num1Int + num2Int;
     }
     if (operators == 2){
-        return num1Int - num2Int;
+        hasil = num1Int - num2Int;
     }
     if (operators == 3){
-        return num1Int * num2Int;
+        hasil = num1Int * num2Int;
     }
     if (operators == 4){
-        return num1Int / num2Int;
+        hasil = num1Int / num2Int;
     }
+    return hasil;
 }
 
 // Fungsi untuk menentukan operator
-char op (int operators){
+string op (int operators){
+    string opr;
     if (operators == 1){
-        return '+';
+        opr = "+";
     }
     if (operators == 2){
-        return '-';
+        opr = "-";
     }
     if (operators == 3){
-        return '*';
+        opr = "*";
     }
     if (operators == 4){
-        return '/';
+        opr = "/";
     }
+    return opr;
 }

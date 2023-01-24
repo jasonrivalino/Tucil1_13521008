@@ -8,6 +8,7 @@ using namespace std;
 
 string num1, num2, num3, num4;
 int num1Int, num2Int, num3Int, num4Int;
+int cards[4];
 
 // Fungsi untuk mengecek apakah inputan valid
 bool checkingCard(string card) {
@@ -69,6 +70,11 @@ void inputNumber() {
 
     cout << "Angka-angka yang akan dicari hasilnya adalah: ";
     cout << num1Int << " " << num2Int << " " << num3Int << " " << num4Int << endl;
+    cards[0] = num1Int;
+    cards[1] = num2Int;
+    cards[2] = num3Int;
+    cards[3] = num4Int;
+    // cout << cards[0]+cards[1]+cards[2]+cards[3] << endl;
     // cout << num1Int + num2Int + num3Int + num4Int << endl;
 }
 
@@ -81,5 +87,10 @@ void random(){
     num4Int = rand() % 13 + 1;
     cout << "Angka-angka yang akan dicari hasilnya adalah: ";
     cout << num1Int << " " << num2Int << " " << num3Int << " " << num4Int << endl;
+    cards[0] = num1Int;
+    cards[1] = num2Int;
+    cards[2] = num3Int;
+    cards[3] = num4Int;
+    // cout << cards[0]+cards[1]+cards[2]+cards[3] << endl;
     // cout << num1Int + num2Int + num3Int + num4Int << endl;
 }
