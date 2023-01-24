@@ -42,7 +42,7 @@ void permutation (int *cards, int start, int end){
 }
 
 // Fungsi untuk mencari solusi dengan menggunakan Brute Force
-void search24 (int w, int x, int y, int z){
+void search24 (int a, int b, int c, int d){
   int i, j, k;
   float calc1, calc2;
   float numHasil;
@@ -53,52 +53,52 @@ void search24 (int w, int x, int y, int z){
         // Pengecekan segala kemungkinan operasi yang dapat dilakukan
 
         // (w op x) op (y op z)
-        calc1= calculation((float)w, (float)x, i);
-        calc2= calculation((float)y, (float)z, k);
+        calc1= calculation((float)a, (float)b, i);
+        calc2= calculation((float)c, (float)d, k);
         numHasil= calculation(calc1, calc2, j);
         if (numHasil == 24){
           counts++;
-          hasilOperasi[counts] = "(" + to_string(w) + " " + op(i) + " " + to_string(x) + ") " + op(j) + " (" + to_string(y) + " " + op(k) + " " + to_string(z) + ")";
+          hasilOperasi[counts] = "(" + to_string(a) + " " + op(i) + " " + to_string(b) + ") " + op(j) + " (" + to_string(c) + " " + op(k) + " " + to_string(d) + ")";
           cout << hasilOperasi[counts] << endl;
         }
 
         // ((w op x) op y) op z
-        calc1= calculation((float)w, (float)x, i);
-        calc2= calculation(calc1, (float)y, j);
-        numHasil= calculation(calc2, (float)z, k);
+        calc1= calculation((float)a, (float)b, i);
+        calc2= calculation(calc1, (float)c, j);
+        numHasil= calculation(calc2, (float)d, k);
         if (numHasil == 24){
           counts++;
-          hasilOperasi[counts] = "((" + to_string(w) + " " + op(i) + " " + to_string(x) + ") " + op(j) + " " + to_string(y) + ") " + op(k) + " " + to_string(z);
+          hasilOperasi[counts] = "((" + to_string(a) + " " + op(i) + " " + to_string(b) + ") " + op(j) + " " + to_string(c) + ") " + op(k) + " " + to_string(d);
           cout << hasilOperasi[counts] << endl;
         }
 
         // (w op (x op y)) op z
-        calc1= calculation((float)x, (float)y, j);
-        calc2= calculation((float)w, calc1, i);
-        numHasil= calculation(calc2, (float)z, k);
+        calc1= calculation((float)b, (float)c, j);
+        calc2= calculation((float)a, calc1, i);
+        numHasil= calculation(calc2, (float)d, k);
         if (numHasil == 24){
           counts++;
-          hasilOperasi[counts] = "(" + to_string(w) + " " + op(i) + " (" + to_string(x) + " " + op(j) + " " + to_string(y) + ")) " + op(k) + " " + to_string(z);
+          hasilOperasi[counts] = "(" + to_string(a) + " " + op(i) + " (" + to_string(b) + " " + op(j) + " " + to_string(c) + ")) " + op(k) + " " + to_string(d);
           cout << hasilOperasi[counts] << endl;
         }
 
         // w op ((x op y) op z)
-        calc1= calculation((float)x, (float)y, j);
-        calc2= calculation(calc1, (float)z, k);
-        numHasil= calculation((float)w, calc2, i);
+        calc1= calculation((float)b, (float)c, j);
+        calc2= calculation(calc1, (float)d, k);
+        numHasil= calculation((float)a, calc2, i);
         if (numHasil == 24){
           counts++;
-          hasilOperasi[counts] = to_string(w) + " " + op(i) + " ((" + to_string(x) + " " + op(j) + " " + to_string(y) + ") " + op(k) + " " + to_string(z) + ")";
+          hasilOperasi[counts] = to_string(a) + " " + op(i) + " ((" + to_string(b) + " " + op(j) + " " + to_string(c) + ") " + op(k) + " " + to_string(d) + ")";
           cout << hasilOperasi[counts] << endl;
         }
 
         // w op (x op (y op z))
-        calc1= calculation((float)y, (float)z, k);
-        calc2= calculation((float)x, calc1, j);
-        numHasil= calculation((float)w, calc2, i);
+        calc1= calculation((float)c, (float)d, k);
+        calc2= calculation((float)b, calc1, j);
+        numHasil= calculation((float)a, calc2, i);
         if (numHasil == 24){
           counts++;
-          hasilOperasi[counts] = to_string(w) + " " + op(i) + " (" + to_string(x) + " " + op(j) + " (" + to_string(y) + " " + op(k) + " " + to_string(z) + "))";
+          hasilOperasi[counts] = to_string(a) + " " + op(i) + " (" + to_string(b) + " " + op(j) + " (" + to_string(c) + " " + op(k) + " " + to_string(d) + "))";
           cout << hasilOperasi[counts] << endl;
         }
       }
