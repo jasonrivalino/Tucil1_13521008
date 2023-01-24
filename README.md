@@ -1,6 +1,6 @@
 # Tugas Kecil 1 Mata Kuliah Strategi Algoritma IF2211
 
-## Author
+## Creator
 Jason Rivalino - 13521008
 
 ## Permainan Kartu 24
@@ -17,17 +17,31 @@ Dalam tugas besar ini, akan dibuat implementasi dari sistem yang ada pada permai
 ```bash
 📦Tucil1_13521008
  ┣ 📂bin
+ ┣ ┗ 📜main.exe
  ┣ 📂doc
+ ┣ ┗ 📜Tucil1_K3_13521008_Jason Rivalino.pdf
  ┣ 📂src
+ ┣ ┣ 📜inputing.cpp
+ ┣ ┣ 📜main.cpp
+ ┣ ┣ 📜operation.cpp
+ ┣ ┣ 📜processing.cpp
+ ┣ ┣ 📜save.cpp
+ ┣ ┗ 📜splash.cpp
  ┣ 📂test
+ ┣ ┣ 📜testprogram1.txt
+ ┣ ┣ 📜testprogram2.txt
+ ┣ ┣ 📜testprogram3.txt
+ ┣ ┣ 📜testprogram4.txt
+ ┣ ┣ 📜testprogram5.txt
+ ┣ ┗ 📜testprogram6.txt
  ┗ 📜README.md
 ```
 
 ## Setup Program
 Langkah-langkah proses setup program adalah sebagai berikut:
 1. Clone repository github ini
-2. 
-3.
+2. Ubah directory ke `cd bin`
+3. Jalankan program `main.exe`
 
 ## Acknowledgements
 - Tuhan Yang Maha Esa
