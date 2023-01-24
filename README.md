@@ -42,6 +42,7 @@ Langkah-langkah proses setup program adalah sebagai berikut:
 1. Clone repository github ini
 2. Ubah directory ke `cd bin`
 3. Jalankan program `main.exe`
+
 Notes: Pastikan telah mendownload GCC
 
 ## Acknowledgements
